@@ -15,7 +15,7 @@ public class CreateUserContract {
         interface OnCompletedListener {
             void onCreateUserSuccess(CreateUserResponse usersResponse);
 
-            void onCreateUserCreate(String message);
+            void onCreateUserError(String message);
 
             void onCreateUserFailed(Throwable t);
         }

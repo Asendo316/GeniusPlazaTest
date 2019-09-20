@@ -39,7 +39,7 @@ public class UsersModel implements CreateUserContract.Model, GetUsersContract.Mo
     }
 
     @Override
-    public void getUser(GetUsersContract.Model.OnCompletedListener onCompletedListener, UsersResponse usersResponse) {
+    public void getUser(GetUsersContract.Model.OnCompletedListener onCompletedListener) {
         Call<UsersResponse> call = gpTestNetworkInterface.getUsers();
         call.enqueue(new Callback<UsersResponse>() {
             @Override
@@ -52,6 +52,5 @@ public class UsersModel implements CreateUserContract.Model, GetUsersContract.Mo
                 onCompletedListener.onGetUsersFailed(t);
             }
         });
-
     }
 }

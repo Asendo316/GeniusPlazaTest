@@ -19,7 +19,7 @@ public class GetUsersContract {
             void onGetUsersFailed(Throwable t);
         }
 
-        void getUser(OnCompletedListener onCompletedListener, UsersResponse usersResponse);
+        void getUser(OnCompletedListener onCompletedListener);
 
     }
 
