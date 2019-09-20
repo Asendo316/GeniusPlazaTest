@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_80"
+    android:adjustViewBounds="true"
+    android:orientation="vertical"
+    app:cardElevation="@null">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userAvatar"
+            android:layout_width="@dimen/margin_70"
+            android:layout_height="@dimen/margin_70"
+            android:layout_centerVertical="true"
+            app:civ_border_color="@color/colorBlack"
+            app:civ_border_width="@dimen/margin_2"
+            app:civ_circle_background_color="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/firstName"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_14"
+            android:layout_toEndOf="@+id/userAvatar"
+            android:fontFamily="@font/montserrat_regular" />
+
+        <TextView
+            android:id="@+id/lastName"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_toEndOf="@+id/firstName"
+            android:fontFamily="@font/montserrat_regular" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

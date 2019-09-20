@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">GeniusTest</string>
+    <string name="app_name">GPTest</string>
+    <string name="name_txt">Enter Name</string>
+    <string name="job_txt">Enter Job</string>
+    <string name="save_txt">Create User</string>
+
 </resources>

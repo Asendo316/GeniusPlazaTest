@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_5"
+    app:cardElevation="@dimen/margin_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_14">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:id="@+id/nameField">
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:autofillHints="@null"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:hint="@string/name_txt"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameField"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginTop="@dimen/margin_8"
+            android:id="@+id/jobField">
+
+            <EditText
+                android:id="@+id/jobEdit"
+                android:inputType="text"
+                android:autofillHints="@null"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_height="?attr/actionBarSize"
+                android:hint="@string/job_txt"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/saveUserBtn"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/jobField"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/margin_14"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_black"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/save_txt"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
