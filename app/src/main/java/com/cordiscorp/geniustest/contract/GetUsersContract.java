@@ -18,6 +18,9 @@ public class GetUsersContract {
 
             void onGetUsersFailed(Throwable t);
         }
+
+        void getUser(OnCompletedListener onCompletedListener, UsersResponse usersResponse);
+
     }
 
     public interface View {

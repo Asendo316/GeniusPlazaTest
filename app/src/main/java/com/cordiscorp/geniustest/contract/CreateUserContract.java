@@ -1,8 +1,8 @@
 package com.cordiscorp.geniustest.contract;
 
 
+import com.cordiscorp.geniustest.connectvity.request.CreateUserRequest;
 import com.cordiscorp.geniustest.connectvity.response.CreateUserResponse;
-import com.cordiscorp.geniustest.connectvity.response.UsersResponse;
 
 /**
  * Created by Ibkunle Adeoluwa on 9/20/2019.
@@ -13,12 +13,15 @@ public class CreateUserContract {
     public interface Model {
 
         interface OnCompletedListener {
-            void onCreateUserSuccess(UsersResponse usersResponse);
+            void onCreateUserSuccess(CreateUserResponse usersResponse);
 
             void onCreateUserCreate(String message);
 
             void onCreateUserFailed(Throwable t);
         }
+
+        void createUser(OnCompletedListener onCompletedListener, CreateUserRequest createUserRequest);
+
     }
 
     public interface View {

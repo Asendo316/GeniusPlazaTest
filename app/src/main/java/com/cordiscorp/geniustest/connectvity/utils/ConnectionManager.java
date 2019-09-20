@@ -16,7 +16,7 @@ public class ConnectionManager {
         this.context = context;
     }
 
-    public boolean isNetworkAvailable() {
+    public  boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
