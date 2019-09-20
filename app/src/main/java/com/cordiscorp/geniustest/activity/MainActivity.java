@@ -1,8 +1,10 @@
-package com.cordiscorp.geniustest;
+package com.cordiscorp.geniustest.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.cordiscorp.geniustest.R;
 
 public class MainActivity extends AppCompatActivity {
 
