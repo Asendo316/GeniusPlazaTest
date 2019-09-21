@@ -22,7 +22,7 @@
             app:civ_circle_background_color="@color/colorWhite" />
 
         <TextView
-            android:id="@+id/firstName"
+            android:id="@+id/name"
             style="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,14 +31,5 @@
             android:layout_toEndOf="@+id/userAvatar"
             android:fontFamily="@font/montserrat_regular" />
 
-        <TextView
-            android:id="@+id/lastName"
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="@dimen/margin_8"
-            android:layout_toEndOf="@+id/firstName"
-            android:fontFamily="@font/montserrat_regular" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

@@ -4,4 +4,11 @@
     <string name="job_txt">Enter Job</string>
     <string name="save_txt">Create User</string>
 
+    <string name="error1">Invalid Name</string>
+    <string name="error2">Invalid Job</string>
+    <string name="error3">No Users</string>
+
+    <string name="success1">User Created</string>
+
+
 </resources>

@@ -12,12 +12,25 @@
         android:layout_height="match_parent"
         android:padding="@dimen/margin_14">
 
-        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
-            android:id="@+id/usersRecycler"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                android:id="@+id/usersRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </com.cooltechworks.views.shimmer.ShimmerRecyclerView>
+            </com.cooltechworks.views.shimmer.ShimmerRecyclerView>
+            <TextView
+                android:id="@+id/errorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:fontFamily="@font/montserrat_regular"
+                android:background="@color/colorWhite"/>
+        </FrameLayout>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
